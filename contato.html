@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Júco Consultoria - Agende sua consultoria estratégica">
+    <title>Contato - Júco Consultoria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header com Navegação -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="midia/logo2.png" alt="" width="60%" class="logo-juco">
+                </a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="cases.html">Cases</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html" class="btn btn-primary btn-sm active">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content animate-fade-in">
+                <h1>Entre em Contato</h1>
+                <p>Vamos transformar seus desafios em oportunidades</p>
+            </div>
+        </div>
+        <div class="page-banner-overlay"></div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="section section-contact">
+        <div class="container">
+            <div class="about-detail-grid">
+                <!-- Formulário de Contato -->
+                <div class="contact-form-container animate-on-scroll">
+                    <div class="section-header text-left">
+                        <h2>Agende sua Consultoria</h2>
+                        <p>Preencha o formulário e entraremos em contato via WhatsApp.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa/Organização</label>
+                                <input type="text" id="empresa" name="empresa">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico">
+                                <option value="">Selecione um serviço</option>
+                                <option value="Consultoria Financeira">Consultoria Financeira</option>
+                                <option value="Consultoria de Marketing">Consultoria de Marketing</option>
+                                <option value="Consultoria Política">Consultoria Política</option>
+                                <option value="Serviços Integrados">Serviços Integrados</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre seu desafio ou projeto..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                Aceito receber comunicações da Júco Consultoria e concordo com a <a href="privacidade.html">Política de Privacidade</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar via WhatsApp</button>
+                    </form>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="contact-info-container animate-on-scroll">
+                    <div class="section-header text-left">
+                        <h2>Informações de Contato</h2>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Endereço</h4>
+                                <p>Av. Paulo Souto, 320<br>Antas/BA - CEP 44000-000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p><a href="#" onclick="sendWhatsAppMessage('Olá! Gostaria de mais informações sobre os serviços da Júco Consultoria.'); return false;" style="color: var(--secondary); text-decoration: none;">(75) 9882-8297</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>E-mail</h4>
+                                <p>contato@jucoconsultoria.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4>Siga-nos nas redes sociais</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/_juco_films/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="section section-faq bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre nossos serviços</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Como funciona a consultoria inicial?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A consultoria inicial é um diagnóstico completo da sua organização, onde identificamos oportunidades de melhoria e desenvolvemos um plano estratégico personalizado. Este processo dura entre 2 a 4 semanas, dependendo da complexidade do projeto.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Qual o prazo médio dos projetos?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo varia conforme o escopo do projeto. Consultorias pontuais podem durar de 1 a 3 meses, enquanto projetos mais complexos podem se estender por 6 a 12 meses. Sempre definimos cronogramas claros no início do trabalho.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Vocês atendem empresas de que porte?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Atendemos desde pequenas empresas até grandes corporações, além de organizações do setor público. Nossos serviços são adaptados ao porte e às necessidades específicas de cada cliente.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Como é definido o investimento?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O investimento é definido após o diagnóstico inicial, considerando o escopo do projeto, prazo de execução e recursos necessários. Oferecemos propostas transparentes e personalizadas para cada cliente.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <h4>Vocês oferecem garantia nos resultados?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com metas claras e mensuráveis. Embora os resultados dependam também da implementação pelo cliente, oferecemos acompanhamento e ajustes necessários para garantir o sucesso do projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CTA -->
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Pronto para começar?</h2>
+                <p>Agende uma reunião sem compromisso e descubra como podemos ajudar sua organização.</p>
+                <a href="#" onclick="sendConsultationRequest('Interesse via seção CTA da página de contato'); return false;" class="btn btn-light">Falar com Especialista</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                          <img src="midia/IMG_6880.PNG" alt="" style="padding: 0; margin: 0 auto;" width="40%">
+                    </div>
+                    <p>Transformando desafios em soluções estratégicas para empresas e lideranças públicas.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/_juco_films/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="sendServiceInquiry('Consultoria Financeira'); return false;">Consultoria Financeira</a></li>
+                        <li><a href="#" onclick="sendServiceInquiry('Consultoria de Marketing'); return false;">Consultoria de Marketing</a></li>
+                        <li><a href="#" onclick="sendServiceInquiry('Consultoria Política'); return false;">Consultoria Política</a></li>
+                        <li><a href="#" onclick="sendServiceInquiry('Serviços Integrados'); return false;">Serviços Integrados</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="cases.html">Cases de Sucesso</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Paulo Souto, 320 - Antas/BA</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span><a href="#" onclick="sendWhatsAppMessage('Olá! Gostaria de mais informações sobre os serviços da Júco Consultoria.'); return false;" style="color: var(--gray-400); text-decoration: none;">(75) 9882-8297</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@jucoconsultoria.com.br</span>
+                        </li>
+                        <li>
+                           
+                            <span>CNPJ 57.977.435/0001-63 </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Júco Consultoria. Todos os direitos reservados.
+                          <br>
+                        Desenvolvido pela <a href="https://www.instagram.com/coding.tech.br/" style="color: white;">CODINGTECH</a> 
+                    </p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacidade.html">Política de Privacidade</a>
+                    <a href="termos.html">Termos de Serviço</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão "Voltar ao topo" -->
+    <a href="#header" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/whatsapp.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
